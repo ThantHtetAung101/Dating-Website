@@ -1,0 +1,81 @@
+:root {
+    --dark: #1b1c1e;
+    --white: #EEEEEE;
+    --red: #DC5F00;
+    --dark-red: #CF0A0A;
+}
+.bg-color {
+    background-color: var(--dark-red);
+}
+.bg-image {
+    background-image: url('../images/background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    background-attachment: fixed;
+    background-color: #343539;
+}
+@font-face {
+    font-family: 'obadiah_proregular';
+    src: url('../fonts/obadiahproregular-webfont.woff') format('woff2'),
+         url('../fonts/obadiahproregular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.navbar-brand {
+    font-family: 'obadian_proregular';
+    font-weight: bold;
+}
+.nav-link {
+    font-family: 'obadian_proregular';
+    font-weight: thin;
+}
+.title {
+    font-size: 13vw;
+    font-family: 'obadian_proregular';
+    font-weight: bolder;
+}
+.btn {
+    font-family: 'obadian_proregular';
+    font-weight: bolder;
+    font-style: italic;
+}
+.main-font {
+    font-family: 'obadian_proregular';
+    font-weight: bolder;
+    font-style: normal;
+}
+.register-container {
+    position: relative;
+    width: 400px;
+}
+.register-container .eye {
+    position: absolute;
+    top: 250px;
+    right: 25px;
+    cursor: pointer;
+}
+#profileUpload {
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 100;
+    } 100% {
+        opacity: 0;
+    }
+}
+.fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+.fadeOut {
+    animation: fadeOut 1s ease-out;
+}
